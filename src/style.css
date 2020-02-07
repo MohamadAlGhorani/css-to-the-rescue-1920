@@ -1,0 +1,64 @@
+main div ul {
+    opacity: 0;
+    height: 0;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+main div input[type=radio]:checked+ul {
+    opacity: 1;
+    height: auto;
+}
+
+@media (min-width:789px) {
+
+    h1 svg text {
+        font-size: 80px;
+        transform: translateY(50px);
+        fill: royalblue;
+    }
+
+    h1 path {
+        fill: transparent;
+        transform: translateX(50px);
+    }
+
+    main {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        position: relative;
+        height: 400px;
+    }
+
+    main div {
+        width: 50%;
+    }
+
+    main div:nth-last-of-type(3),
+    main div:nth-last-of-type(1) {
+        text-align: right;
+    }
+
+    main div:nth-last-of-type(3) ul,
+    main div:nth-last-of-type(1) ul {
+        text-align: left;
+    }
+
+    main div ul {
+        position: absolute;
+        left: 1px;
+        right: 1px;
+        top: 50px;
+        margin: 0 auto;
+        width: 100px;
+    }
+
+    body>div {
+        grid-row-gap: 25vh;
+        width: 100px;
+    }
+}
