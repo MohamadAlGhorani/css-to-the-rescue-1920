@@ -2,9 +2,21 @@ h1 {
     text-align: center;
 }
 
+html {
+    box-shadow: inset 0px 100px 100px orange;
+}
+
 body {
     background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#004499)) no-repeat;
-    height: 100vh;
+    cursor: url("images/fishing-rod-2.png"), auto;
+    filter: blur(2px);
+    animation-name: blur-glass;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+body:active {
+    cursor: url("images/fishing-2.png"), auto;
 }
 
 h1 svg text {
@@ -19,8 +31,28 @@ h1 path {
 }
 
 main div svg {
-    cursor: pointer;
+    cursor: url("images/fishing-rod-2.png"), auto;
     transition: all 1s ease;
+}
+
+main div svg:active {
+    cursor: url("images/fishing-2.png"), auto;
+}
+
+main div label {
+    cursor: url("images/fishing-rod-2.png"), auto;
+}
+
+main div label:active {
+    cursor: url("images/fishing-2.png"), auto;
+}
+
+main div {
+    cursor: url("images/fishing-rod-2.png"), auto;
+}
+
+main div:active {
+    cursor: url("images/fishing-2.png"), auto;
 }
 
 main div svg:hover {
@@ -68,6 +100,7 @@ main>div>div {
     width: 0;
     margin: 0 auto;
     transition: all 1s;
+    z-index: 3;
 }
 
 main div svg {
@@ -79,6 +112,8 @@ main div input[type=radio]:checked+div {
     opacity: 1;
     width: 300px;
     height: 300px;
+    z-index: 100;
+    pointer-events: all;
 }
 
 main div div div {
@@ -89,12 +124,32 @@ main div div div {
 
 }
 
+main div div div:hover {
+    width: 100%;
+    height: 100%;
+    animation: spin 2s linear infinite;
+    position: relative;
+
+}
+
 main div div div div {
     width: 100%;
     height: 100%;
     transition: border-radius 1s ease-out;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     animation: morph 8s ease-in-out infinite both alternate;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid white;
+    z-index: 5;
+}
+
+main div div div:hover div {
+    width: 100%;
+    height: 100%;
+    transition: border-radius 1s ease-out;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 2s ease-in-out infinite both alternate;
     position: absolute;
     overflow: hidden;
     border: 1px solid white;
@@ -116,6 +171,21 @@ main div div div div div {
     z-index: 2;
 }
 
+main div div div:hover div div {
+    width: 142%;
+    height: 142%;
+    position: absolute;
+    left: -21%;
+    top: -21%;
+    background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(#A4D7D9), to(#FFFFFF)) no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 2s linear infinite reverse;
+    opacity: 1;
+    z-index: 2;
+}
+
 main ul {
     list-style: none;
 }
@@ -125,9 +195,238 @@ main ul li {
     font-family: fantasy;
 }
 
+footer {
+    position: relative;
+    z-index: -10;
+    margin-top: 400px;
+    cursor: url("images/fishing-rod-2.png"), auto;
+}
+
+footer:active {
+    cursor: url("images/fishing-2.png"), auto;
+}
+
+footer>div:nth-of-type(1) {
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(64% 9%, 89% 19%, 88% 42%, 94% 73%, 94% 88%, 77% 99%, 37% 95%, 13% 98%, 1% 71%, 3% 36%, 17% 16%, 39% 18%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(30, 30, 32, 1) 35%, rgba(156, 159, 159, 1) 100%);
+    position: absolute;
+    mix-blend-mode: multiply;
+    bottom: 0;
+    left: 0;
+
+}
+
+footer>div:nth-of-type(2) {
+    height: 300px;
+    width: 300px;
+    clip-path: polygon(53% 13%, 76% 19%, 80% 38%, 88% 55%, 96% 68%, 84% 86%, 74% 91%, 63% 96%, 45% 96%, 21% 86%, 6% 64%, 1% 45%, 16% 27%, 23% 11%, 41% 7%);
+    background: rgb(109, 109, 110);
+    background: linear-gradient(90deg, rgba(109, 109, 110, 1) 0%, rgba(30, 30, 32, 1) 54%, rgba(156, 159, 159, 1) 100%);
+    mix-blend-mode: multiply;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+
+footer>div:nth-of-type(3) {
+    height: 150px;
+    width: 200px;
+    clip-path: polygon(53% 13%, 76% 19%, 80% 38%, 88% 55%, 96% 68%, 84% 86%, 74% 91%, 63% 96%, 45% 96%, 21% 86%, 6% 64%, 1% 45%, 16% 27%, 23% 11%, 41% 7%);
+    background: rgb(109, 109, 110);
+    background: linear-gradient(90deg, rgba(109, 109, 110, 1) 0%, rgba(30, 30, 32, 1) 54%, rgba(156, 159, 159, 1) 100%);
+    mix-blend-mode: multiply;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+footer>div:nth-of-type(4) {
+    height: 350px;
+    width: 200px;
+    clip-path: polygon(53% 13%, 76% 19%, 80% 38%, 88% 55%, 96% 68%, 84% 86%, 74% 91%, 63% 96%, 45% 96%, 21% 86%, 6% 64%, 1% 45%, 16% 27%, 23% 11%, 41% 7%);
+    background: rgb(109, 109, 110);
+    background: linear-gradient(90deg, rgba(109, 109, 110, 1) 0%, rgba(30, 30, 32, 1) 54%, rgba(156, 159, 159, 1) 100%);
+    mix-blend-mode: multiply;
+    position: absolute;
+    bottom: -10px;
+    left: 50px;
+}
+
+footer>div:nth-of-type(5) {
+    clip-path: polygon(43% 3%, 33% 21%, 36% 42%, 45% 61%, 40% 83%, 46% 99%, 55% 76%, 58% 56%, 48% 39%);
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom: 150px;
+    z-index: 3;
+    left: 0px;
+    background: rgb(31, 82, 23);
+    background: linear-gradient(90deg, rgba(31, 82, 23, 1) 0%, rgba(112, 204, 91, 1) 54%, rgba(5, 80, 5, 1) 100%);
+    transition: clip-path 2s;
+    animation-name: plant;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+footer>div:nth-of-type(6) {
+    clip-path: polygon(43% 3%, 33% 21%, 36% 42%, 45% 61%, 40% 83%, 46% 99%, 55% 76%, 58% 56%, 48% 39%);
+    height: 400px;
+    width: 200px;
+    transform: rotate(20deg);
+    position: absolute;
+    bottom: 120px;
+    z-index: 3;
+    left: 100px;
+    background: rgb(31, 82, 23);
+    background: linear-gradient(90deg, rgba(31, 82, 23, 1) 0%, rgba(112, 204, 91, 1) 54%, rgba(5, 80, 5, 1) 100%);
+    transition: all 2s;
+    animation-name: plant;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+footer>div:nth-of-type(7) {
+    transform: rotate(-13deg);
+    height: 298px;
+    left: 50px;
+    margin: auto;
+    position: absolute;
+    bottom: 200px;
+    width: 100px;
+    z-index: 3;
+    transform-origin: center bottom;
+    animation-name: l_plant;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+footer>div:nth-of-type(7)>div:nth-of-type(1) {
+    border-radius: 40px 40px 40px 40px;
+    border-right: 12px groove green;
+    height: 90px;
+    position: absolute;
+    top: -1px;
+    width: 62px;
+}
+
+footer>div:nth-of-type(7)>div:nth-of-type(1):after {
+    transform: rotate(-32deg) skewX(-9deg) skewY(32deg);
+    background-color: #1E4E1D;
+    border-radius: 40px 40px 8px 80px;
+    box-shadow: 5px 3px 5px #1A2C1D inset;
+    content: "";
+    height: 47px;
+    left: 25px;
+    position: absolute;
+    top: 31px;
+    width: 25px;
+}
+
+footer>div:nth-of-type(7)>div:nth-of-type(1):before {
+    transform: rotate(16deg) skewX(-9deg) skewY(-32deg);
+    background-color: #7fbf7f;
+    border-radius: 40px 40px 80px 8px;
+    box-shadow: -9px 2px 7px #233A27 inset;
+    content: "";
+    height: 43px;
+    left: 83px;
+    position: absolute;
+    top: 8px;
+    width: 25px;
+}
+
+footer>div:nth-of-type(7)>div:nth-of-type(2) {
+    border-left: 12px ridge green;
+    border-radius: 40px 40px 40px 40px;
+    height: 111px;
+    left: 24px;
+    position: absolute;
+    top: 83px;
+    width: 70px;
+}
+
+footer>div:nth-of-type(7)>div:nth-of-type(2):after {
+    transform: rotate(-32deg) skewX(-9deg) skewY(32deg);
+    background-color: #7FBF7F;
+    border-radius: 40px 40px 8px 80px;
+    box-shadow: 5px 3px 7px #233A27 inset;
+    content: "";
+    height: 50px;
+    left: -46px;
+    position: absolute;
+    top: 19px;
+    width: 25px;
+}
+
+footer>div:nth-of-type(7)>div:nth-of-type(2):before {
+    transform: rotate(16deg) skewX(-9deg) skewY(-32deg);
+    background-color: #1E4E1D;
+    border-radius: 40px 40px 80px 8px;
+    box-shadow: -11px 6px 11px #103016 inset;
+    content: "";
+    height: 58px;
+    left: 14px;
+    position: absolute;
+    top: 32px;
+    width: 26px;
+}
+
+footer>div:nth-of-type(7)>div:nth-of-type(3) {
+    border-radius: 40px 40px 40px 40px;
+    border-right: 12px groove green;
+    height: 111px;
+    position: absolute;
+    top: 187px;
+    width: 62px;
+}
+
+footer>div:nth-of-type(7)>div:nth-of-type(3):after {
+    transform: rotate(-32deg) skewX(-9deg) skewY(32deg);
+    background-color: #1E4E1D;
+    border-radius: 40px 40px 8px 80px;
+    box-shadow: 4px 2px 5px #1A2C1D inset;
+    content: "";
+    height: 47px;
+    left: 30px;
+    position: absolute;
+    top: 23px;
+    width: 25px;
+}
+
+footer>div:nth-of-type(7)>div:nth-of-type(3):before {
+    transform: rotate(16deg) skewX(-9deg) skewY(-32deg);
+    background-color: #7FBF7F;
+    border-radius: 130px 40px 165px 23px;
+    box-shadow: -9px 2px 7px #233A27 inset;
+    content: "";
+    height: 55px;
+    left: 82px;
+    position: absolute;
+    top: -5px;
+    width: 28px;
+}
+
 @media (min-width:789px) {
     body {
         height: 100%;
+    }
+
+    footer {
+        margin-top: 0px;
+    }
+
+    footer>div:nth-of-type(3) {
+        left: 150px;
+    }
+
+    footer>div:nth-of-type(6) {
+        left: 60px;
+        width: 300px;
     }
 
     main {
@@ -165,6 +464,9 @@ main ul li {
     main div input[type=radio]:checked+div {
         height: 300px;
     }
+
+
+
 }
 
 @keyframes morph {
@@ -214,5 +516,53 @@ main ul li {
 
     100% {
         transform: rotate(0deg)
+    }
+}
+
+@keyframes plant {
+    50% {
+        transition: all 1s;
+        clip-path: polygon(43% 7%, 45% 28%, 43% 52%, 48% 78%, 45% 97%, 63% 68%, 56% 52%, 57% 28%, 52% 16%);
+    }
+
+    100% {
+        transition: all 1s;
+        clip-path: polygon(43% 3%, 33% 21%, 36% 42%, 45% 61%, 40% 83%, 46% 99%, 55% 76%, 58% 56%, 48% 39%);
+    }
+}
+
+@keyframes l_plant {
+    from {
+        transform: rotate(-13deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    to {
+        transform: rotate(-13deg);
+    }
+}
+
+@keyframes blur-glass {
+    0% {
+        filter: blur(0px);
+    }
+
+    25% {
+        filter: blur(10px);
+    }
+
+    50% {
+        filter: blur(15px);
+    }
+
+    75% {
+        filter: blur(10px);
+    }
+
+    100% {
+        filter: blur(0px);
     }
 }
