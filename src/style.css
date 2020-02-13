@@ -201,7 +201,7 @@ main ul li {
 footer {
     position: relative;
     z-index: -10;
-    margin-top: 400px;
+    margin-bottom: 0;
 }
 
 footer>div:nth-of-type(1) {
@@ -412,10 +412,6 @@ footer>div:nth-of-type(7)>div:nth-of-type(3):before {
 @media (min-width:789px) {
     html {
         box-shadow: inset 0px 50px 200px orange;
-    }
-
-    body {
-        height: 100%;
     }
 
     footer {
