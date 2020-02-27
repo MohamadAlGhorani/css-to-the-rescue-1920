@@ -1,5 +1,8 @@
 # Seafood resturant
-<img width="1278" alt="Screenshot 2020-02-27 at 10 21 30" src="https://user-images.githubusercontent.com/45425087/75430042-07699280-594b-11ea-8db8-4bedfca9f784.png">
+
+![ezgif com-resize](https://user-images.githubusercontent.com/45425087/75432576-e4d97880-594e-11ea-96e4-220f1a90992a.gif)
+
+
 
 # The assignments
 
