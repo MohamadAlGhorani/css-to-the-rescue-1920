@@ -13,7 +13,6 @@
 
 # CSS properties
 ``` css
-@ media print{}
 filter: blur();
 backdrop-filter: opacity();
 transform: translate();
@@ -25,9 +24,10 @@ clip-path: polygon();
 mix-blend-mode: multiply;
 cursor: url();
 overflow:;
-@keyframe animation{}
 :before{}
 :after{}
 :active{}
 :hover{}
+@ media print{}
+@keyframe animation{}
 ```
