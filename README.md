@@ -1,6 +1,5 @@
 # Seafood resturant
-[![Image from Gyazo](https://i.gyazo.com/d2ba8e2be51dbe844680047552c5ed3e.gif)](https://gyazo.com/d2ba8e2be51dbe844680047552c5ed3e)
-
+![Image from Gyazo](https://i.gyazo.com/d2ba8e2be51dbe844680047552c5ed3e.gif)
 # The assignments
 
 * Responsive restauraunt menu
