@@ -1,5 +1,5 @@
 # Seafood resturant
-[(https://i.gyazo.com/d2ba8e2be51dbe844680047552c5ed3e.gif)](https://gyazo.com/d2ba8e2be51dbe844680047552c5ed3e)
+![screen record](https://gyazo.com/d2ba8e2be51dbe844680047552c5ed3e)
 
 # The assignments
 
