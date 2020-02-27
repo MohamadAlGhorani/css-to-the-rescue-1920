@@ -1,4 +1,4 @@
-# Seafood resturant living menu
+# Seafood restaurant the live menu
 
 ![ezgif com-resize](https://user-images.githubusercontent.com/45425087/75432576-e4d97880-594e-11ea-96e4-220f1a90992a.gif)
 
