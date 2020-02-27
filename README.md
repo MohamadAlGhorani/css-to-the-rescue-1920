@@ -1,5 +1,5 @@
 # Seafood resturant
-[![Image from Gyazo](https://i.gyazo.com/8ebd18dcccf31ef4c61761d884823062.gif)](https://gyazo.com/8ebd18dcccf31ef4c61761d884823062)
+<img width="1278" alt="Screenshot 2020-02-27 at 10 21 30" src="https://user-images.githubusercontent.com/45425087/75430042-07699280-594b-11ea-8db8-4bedfca9f784.png">
 
 # The assignments
 
