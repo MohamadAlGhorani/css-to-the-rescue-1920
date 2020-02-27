@@ -13,6 +13,7 @@
 
 # CSS properties
 ``` css
+@ media print{}
 filter: blur();
 backdrop-filter: opacity();
 transform: translate();
