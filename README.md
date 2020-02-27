@@ -22,7 +22,7 @@ clip-path: polygon();
 mix-blend-mode: multiply;
 cursor: url();
 overflow:;
-@keyframe{}
+@keyframe animation{}
 :before{}
 :after{}
 :active{}
